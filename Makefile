@@ -61,9 +61,9 @@ deploy:
 .PHONY:docker
 docker:
 	@echo "开始构建镜像"
-	docker build -t muxi-auditor:v1.0.0 .
+	docker build -t muxi-auditor:v1.0.1 .
 	@echo "准备启动"
-	docker run -it --rm -p 8080:8080 -v ./config/config.yaml:/data/conf/config.yaml muxi-auditor:v1.0.0
+	#docker run -it --rm -p 8080:8080 -v ./config/config.yaml:/data/conf/config.yaml muxi-auditor:v1.0.0
 
 .PHONY:es
 es:
