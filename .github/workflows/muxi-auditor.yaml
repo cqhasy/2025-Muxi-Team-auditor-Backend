@@ -34,8 +34,8 @@ jobs:
           context: .
           push: false
           tags: |
-            ${{ secrets.ALIYUN_REGISTRY }}/muxi/auditor_backend:${{ github.sha }}
-            ${{ secrets.ALIYUN_REGISTRY }}/muxi/auditor_backend:latest
+            muxi/auditor_backend:${{ github.sha }}
+            muxi/auditor_backend:latest
           file: ./Dockerfile
           build-args:
             Project_Name=muxi-auditor
