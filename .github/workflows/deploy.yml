@@ -8,7 +8,7 @@ jobs:
   build:
     name: Build Docker Image
     runs-on: ubuntu-latest
-    if: github.repository == 'cqhasy/2025-Muxi-Team-auditor-Backend'
+    if: github.repository == 'muxi-Infra/auditor-Backend'
     steps:
       - uses: actions/checkout@v6
 
@@ -40,7 +40,7 @@ jobs:
   deploy:
     name: Deploy To Server
     runs-on: ubuntu-latest
-    if: github.repository == 'cqhasy/2025-Muxi-Team-auditor-Backend'
+    if: github.repository == 'muxi-Infra/auditor-Backend'
     needs:
       - build
     steps:
